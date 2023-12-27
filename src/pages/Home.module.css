@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap");
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Para ocupar toda la altura de la ventana */
+  margin: 0; /* Elimina el margen predeterminado del cuerpo */
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* O el formato que prefieras */
+  align-items: center;
+  text-align: center; /* Alinea el texto al centro */
+}
+
+h1 {
+  font-family: "Open Sans", sans-serif;
+}
+
+h2 {
+  font-family: "Open Sans", sans-serif;
+}

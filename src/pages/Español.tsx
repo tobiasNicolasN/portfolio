@@ -1,0 +1,5 @@
+function Español() {
+  return <div>Hola a todos</div>;
+}
+
+export default Español;
