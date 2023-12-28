@@ -1,24 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   display: flex;
   justify-content: center;
-  align-items: center;
   height: 100vh; /* Para ocupar toda la altura de la ventana */
-  margin: 0; /* Elimina el margen predeterminado del cuerpo */
+  background-color: #202020;
 }
 
 .container {
+  margin-top: 30vh;
   display: flex;
   flex-direction: column; /* O el formato que prefieras */
-  align-items: center;
-  text-align: center; /* Alinea el texto al centro */
+  gap: 0;
+  color: white;
+  text-align: center;
 }
 
 h1 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-size: 5vh;
+  font-weight: 700;
 }
 
 h2 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-size: 2.5vh;
+  font-weight: 500;
+  text-align: left;
+}
+
+.buttons {
+  margin-top: 5vh;
 }
