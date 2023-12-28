@@ -1,37 +1,15 @@
 .navButton {
-  position: relative;
-  background: rgba(255, 255, 255, 0.2);
-  border: none;
-  padding: 15px 30px;
-  cursor: pointer;
-  outline: none;
-  overflow: hidden;
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #ffffff; /* Color del texto */
+  width: 130px;
+  background-color: transparent;
+  border: 1px solid #ffffff; /* Borde blanco */
+  transition: background-color 0.5s;
 }
 
-.light {
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  background-color: #ffffff9f;
-  border-radius: 50%;
-  animation: rotateLight 2s linear infinite, pulseLight 1s ease-out infinite;
-}
-
-@keyframes rotateLight {
-  0% {
-    transform: translateX(0) rotate(0deg);
-  }
-  100% {
-    transform: translateX(100px) rotate(360deg);
-  }
-}
-
-@keyframes pulseLight {
-  0%,
-  100% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
+.navButton:hover {
+  background-color: #DA70D6; /* Cambio de color al pasar el ratón */
+  border: 1px solid #DA70D6;
 }

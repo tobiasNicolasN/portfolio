@@ -14,7 +14,6 @@ function Navigate({ path, buttonText }: NavigateProps) {
 
   return (
     <button className={style.navButton} onClick={() => goTo(path)}>
-      <div className={style.light}></div>
       <span>{buttonText}</span>
     </button>
   );
