@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin-top: 2.5vh;
+    width: 93vw;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navBar{
+    display: flex;
+    gap: 5vh;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.navButton{
+    font-size: 3vh ;
+}
+
+.name{
+    font-size: 4vh;
+}
+
+.hr{
+    margin-top: 1vh;
+    width: 50vw;
+}

@@ -1,5 +1,5 @@
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
-import style from "./SocialMedia.module.css";
+import style from "../styles/SocialMedia.module.css";
 
 function SocialMedia() {
   return (

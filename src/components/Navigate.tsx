@@ -1,12 +1,12 @@
 import { useNavigate } from "react-router-dom";
-import style from "./Navigate.module.css";
+import style from "../styles/Navigate.module.css";
 
-interface NavigateProps {
+interface INavigateProps {
   path: string;
   buttonText?: string;
 }
 
-function Navigate({ path, buttonText }: NavigateProps) {
+function Navigate({ path, buttonText }: INavigateProps) {
   const navigate = useNavigate();
   function goTo(path: string) {
     navigate(path);

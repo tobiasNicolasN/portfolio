@@ -1,0 +1,14 @@
+.container {
+  width: 90vw;
+  color: white;
+  align-items: center;
+}
+
+.about {
+    font-size: 3.5vh;
+}
+
+.info {
+    font-size: 2vh;
+    text-align: center;
+}

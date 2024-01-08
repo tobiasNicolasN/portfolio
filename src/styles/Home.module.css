@@ -1,0 +1,121 @@
+.container {
+  width: 100%;
+  margin-top: 32vh;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  color: #dbd8e3;
+  text-align: left;
+}
+
+.text1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 5.5vh;
+  font-weight: 700;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 1.2s steps(50, end);
+}
+
+.text2 {
+  text-align: center;
+  color: #dbd8e3;
+  font-family: "Oswald", sans-serif;
+  font-size: 3vh;
+  opacity: 0;
+  font-weight: 500;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  font-size: 4vh;
+  gap: 2.5vh;
+  margin-top: 3vh;
+  opacity: 0;
+}
+
+.social {
+  position: absolute;
+  bottom: 2.5vh;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 0.5vh;
+  margin-top: 5vh;
+  font-size: 3.5vh;
+  opacity: 0;
+}
+
+.text2 {
+  animation: fadeIn 1s forwards 0.8s;
+}
+
+.buttons {
+  animation: fadeIn 1s forwards 1.2s;
+}
+
+.social {
+  animation: fadeIn 1s forwards 1.6s;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    margin-top: 30vh;
+  }
+
+  .text1 {
+    font-size: 6.5vh;
+  }
+  .text2,
+  .social {
+    font-size: 4vh;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    margin-top: 27vh;
+  }
+
+  .text1 {
+    font-size: 8vh;
+  }
+  .text2 {
+    font-size: 4vh;
+  }
+  .social {
+    font-size: 4vh;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    margin-top: 21vh;
+  }
+  .text1 {
+    font-size: 10vh;
+  }
+  .text2 {
+    font-size: 5vh;
+  }
+  .social {
+    font-size: 4vh;
+  }
+}
