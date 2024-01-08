@@ -11,33 +11,77 @@ body {
   display: flex;
   justify-content: center;
   height: 100vh; /* Para ocupar toda la altura de la ventana */
-  background-color: #202020;
+  background-color: #494d5f;
 }
 
 .container {
-  margin-top: 30vh;
+  margin-top: 32vh;
   display: flex;
   flex-direction: column; /* O el formato que prefieras */
   gap: 0;
-  color: white;
-  text-align: center;
+  color: #e5eaf5;
+  text-align: left;
 }
 
 h1 {
   font-family: "Oswald", sans-serif;
-  font-size: 5vh;
+  font-size: 5.2vh;
   font-weight: 700;
+  overflow: hidden;
+  white-space: nowrap; /* Evita que las palabras se envuelvan a la siguiente línea */
+
+  animation: typing 1s steps(50, end);
 }
 
 h2 {
   font-family: "Oswald", sans-serif;
-  font-size: 2.5vh;
+  font-size: 3vh;
+  opacity: 0; /* Inicialmente invisible */
   font-weight: 500;
-  text-align: left;
 }
 
 .buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  font-size: 3vh;
+  gap: 2.5vh;
+  margin-top: 3vh;
+  opacity: 0; /* Inicialmente invisible */
+}
+
+.social {
+  position: absolute;
+  bottom: 2vh;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 0.5vh;
   margin-top: 5vh;
+  font-size: 3.5vh;
+  opacity: 0; /* Inicialmente invisible */
+}
+
+h2 {
+  animation: fadeIn 1s forwards 0.8s; /* Duración de 1 segundo, retraso de 2 segundos */
+}
+
+.buttons,
+.social {
+  animation: fadeIn 1s forwards 1.2s;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1; /* Hacer visible al final de la animación */
+  }
 }
