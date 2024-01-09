@@ -1,16 +1,16 @@
 import About from "../components/About";
-import Bg from "../components/Bg";
 import NavBar from "../components/NavBar";
+import Skills from '../components/Skills'
 
 function English() {
   return <body>
-  <Bg />
   <div>
-    <NavBar homeLang="Home" proyectsLang="Proyects" />;
+    <NavBar homeLang="Home" projectsLang="Projects" />;
     <About
       about="About me"
-      info="I am a FullStack Developer with one year of experience, specializing in the use of TypeScript with React. Additionally, I have solid knowledge in Node.js, JavaScript, CSS, Git, and MongoDB. Currently, I am exploring the mobile world and expanding my skills by learning Dart and Flutter."
+      info="I'm Tobias, a twenty-three year old FullStack Developer from Buenos Aires, Argentina. - I am a one-year-experienced, passionate about bringing ideas to life. I love learning new technologies and exploring creative solutions. I am seeking team collaboration to grow and make a substantial contribution to development."
     />
+    <Skills title="Skills"/>
   </div>
 </body>;
 }

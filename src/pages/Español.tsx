@@ -1,17 +1,18 @@
 import About from "../components/About";
-import Bg from "../components/Bg";
 import NavBar from "../components/NavBar";
+import Skills from "../components/Skills";
+import style from '../styles/Español.module.css'
 
 function Español() {
   return (
-    <body>
-      <Bg />
-      <div>
-        <NavBar homeLang="Inicio" proyectsLang="Proyectos" />;
+    <body className={style.body}>
+      <div className={style.about}>
+        <NavBar homeLang="Inicio" projectsLang="Proyectos" />;
         <About
           about="Sobre mi"
-          info="Soy un desarrollador FullStack con un año de experiencia, especializado en el uso de TypeScript con React. Además, cuento con conocimientos sólidos en Node.js, JavaScript, CSS, Git y MongoDB. Actualmente, explorando el mundo mobile y ampliando mis habilidades aprendiendo Dart y Flutter."
+          info="Soy Tobias, un desarrollador fullstack de veintitrés años de Buenos Aires, Argentina. Con un año de experiencia, apasionado por materializar ideas. Me encanta aprender nuevas tecnologías y explorar soluciones creativas. Busco colaborar en equipos para enriquecerme y contribuir de manera significativa al desarrollo."
         />
+        <Skills title="Habilidades"/>
       </div>
     </body>
   );

@@ -5,29 +5,19 @@
 
 .container{
     margin-top: 2.5vh;
-    width: 93vw;
-    color: white;
+    width: 95vw;
+    color: #e8e8e8	;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
 }
 
 .navBar{
     display: flex;
-    gap: 5vh;
-    justify-content: space-between;
+    gap: 2vh;
     list-style: none;
 }
 
 .navButton{
     font-size: 3vh ;
-}
-
-.name{
-    font-size: 4vh;
-}
-
-.hr{
-    margin-top: 1vh;
-    width: 50vw;
+    font-weight: 700;
 }

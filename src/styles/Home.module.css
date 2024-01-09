@@ -4,11 +4,12 @@
   display: flex;
   flex-direction: column;
   gap: 0;
-  color: #dbd8e3;
+  color: #e8e8e8	;
   text-align: left;
 }
 
 .text1 {
+  /* Tobias Nicolas Nuñez */
   font-family: "Oswald", sans-serif;
   font-size: 5.5vh;
   font-weight: 700;
@@ -18,8 +19,9 @@
 }
 
 .text2 {
+  /* FullStack Developer */
   text-align: center;
-  color: #dbd8e3;
+  color: #8c8c8c;
   font-family: "Oswald", sans-serif;
   font-size: 3vh;
   opacity: 0;
@@ -27,6 +29,7 @@
 }
 
 .buttons {
+  /* Language Buttons */
   display: flex;
   justify-content: center;
   font-size: 4vh;
@@ -36,6 +39,7 @@
 }
 
 .social {
+  /* Github, Linkedin */
   position: absolute;
   bottom: 2.5vh;
   left: 50%;
