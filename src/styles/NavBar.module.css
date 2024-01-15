@@ -1,6 +1,8 @@
 .container {
   width: 100vw;
-  height: 10vh;
+  height: 8vh;
+  position: fixed;
+  background: #0b0b0b;
 }
 
 .navBar {

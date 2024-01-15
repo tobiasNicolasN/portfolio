@@ -19,18 +19,44 @@
   }
 
   .aboutContainer{
-    margin-left: 5vw;
+    margin-left: 3vw;
     font-weight: 500;
     margin-bottom: 2vh;
+    margin-top: 10vh;
   }
 
-  .about{
+  .text{
     color: white;
     text-align: left;
     font-size: 1.5rem;
   }
 
-  .colorText{
+  .highlighted{
     color: #1eff05;
-    font-style: italic;
+    /* font-style: italic; */
+  }
+
+
+  .titleSkill{
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+
+  .skills{
+    margin-left: 3vw;
+  }
+
+  .skillSection{
+    color: #8c8c8c;
+    font-size: 1.3rem;
+    margin-top: 2vh;
+  }
+
+  .skillText{
+    color:white;
+    text-align: left;
+    font-size: 1.3rem;
   }
