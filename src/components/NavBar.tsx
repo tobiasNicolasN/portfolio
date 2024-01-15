@@ -1,18 +1,65 @@
-import style from '../styles/NavBar.module.css'
+import style from "../styles/NavBar.module.css";
+import { VscMenu, VscClose } from "react-icons/vsc";
+import { useState } from "react";
 
-interface INavBarProps {
-  homeLang: string;
-  projectsLang: string;
-}
+function NavBar() {
+  const [isSideBarVisible, setSideBarVisible] = useState(false);
 
-function NavBar({ homeLang, projectsLang }: INavBarProps) {
+  function showSideBar() {
+    setSideBarVisible(!isSideBarVisible);
+  }
+
   return (
-    <div className={style.container}>
+    <nav className={style.container}>
       <ul className={style.navBar}>
-        <li className={style.navButton}>{homeLang}</li>
-        <li className={style.navButton}>{projectsLang}</li>
+        <li>
+          <a className={style.name}>Tobias Nicolas Nuñez</a>
+        </li>
+        <li>
+          <a href="#" className={`${style.item} ${style.hideOnMobile}`}>
+            PROJECTS
+          </a>
+        </li>
+        <li>
+          <a href="#" className={`${style.item} ${style.hideOnMobile}`}>
+            ABOUT
+          </a>
+        </li>
+        <li>
+          <a href="#" className={`${style.item} ${style.hideOnMobile}`}>
+            CONTACT
+          </a>
+        </li>
+        <li onClick={showSideBar}>
+          <a className={style.menuButton}>
+            <VscMenu />
+          </a>
+        </li>
       </ul>
-    </div>
+      <ul className={`${style.sideBar} ${isSideBarVisible ? style.show : ""}`}>
+        <li onClick={showSideBar}>
+          <a href="#" className={style.closeButton}>
+            <VscClose />
+          </a>
+        </li>
+        <li>
+          <a href="#" className={style.sideBarItem}>
+            PROJECTS
+          </a>
+        </li>
+        <li>
+          <a href="#" className={style.sideBarItem}>
+            ABOUT
+          </a>
+        </li>
+        <li>
+          <a href="#" className={style.sideBarItem}>
+            CONTACT
+          </a>
+        </li>
+      </ul>
+      <hr />
+    </nav>
   );
 }
 

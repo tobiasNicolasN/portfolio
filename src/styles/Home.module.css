@@ -4,14 +4,14 @@
   display: flex;
   flex-direction: column;
   gap: 0;
-  color: #e8e8e8	;
+  color: #e8e8e8;
   text-align: left;
 }
 
 .text1 {
   /* Tobias Nicolas Nuñez */
   font-family: "Oswald", sans-serif;
-  font-size: 5.5vh;
+  font-size: clamp(3rem, 1.559rem + 6.588vw, 6.5rem);
   font-weight: 700;
   overflow: hidden;
   white-space: nowrap;
@@ -23,22 +23,41 @@
   text-align: center;
   color: #8c8c8c;
   font-family: "Oswald", sans-serif;
-  font-size: 3vh;
+  font-size: clamp(1.5rem, 0.779rem + 3.294vw, 3.25rem);
   opacity: 0;
   font-weight: 500;
 }
 
-.buttons {
-  /* Language Buttons */
+.langButtons {
+  /* Language buttons */
   display: flex;
   justify-content: center;
-  font-size: 4vh;
   gap: 2.5vh;
   margin-top: 3vh;
   opacity: 0;
 }
 
-.social {
+.langButton {
+  background-color: transparent;
+  padding: 10px 20px;
+  width: 40%;
+  text-decoration: none;
+  font-size: clamp(0.8rem, 0.512rem + 1.318vw, 1.5rem);
+  font-weight: 500;
+  color: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+}
+
+.langButton:hover {
+  transition: 0.8s;
+  cursor: pointer;
+  background-color: #1eff05;
+  color: #000000;
+  border: 1px solid #1eff05;
+}
+
+.socialButtons {
   /* Github, Linkedin */
   position: absolute;
   bottom: 2.5vh;
@@ -48,22 +67,34 @@
   justify-content: center;
   gap: 0.5vh;
   margin-top: 5vh;
-  font-size: 3.5vh;
+  font-size: clamp(2rem, 1.671rem + 1.506vw, 2.8rem);
   opacity: 0;
+}
+
+.socialButton {
+  color: #e8e8e8;
+  opacity: 30%;
+}
+
+.socialButton:hover {
+  transform: scale(1.1);
+  transition: 0.8s;
+  opacity: 100%;
 }
 
 .text2 {
   animation: fadeIn 1s forwards 0.8s;
 }
 
-.buttons {
+.langButtons {
   animation: fadeIn 1s forwards 1.2s;
 }
 
-.social {
+.socialButtons {
   animation: fadeIn 1s forwards 1.6s;
 }
 
+/* Animations */
 @keyframes typing {
   from {
     width: 0;
@@ -79,17 +110,11 @@
   }
 }
 
+/* Responsive desing */
+
 @media only screen and (min-width: 768px) {
   .container {
     margin-top: 30vh;
-  }
-
-  .text1 {
-    font-size: 6.5vh;
-  }
-  .text2,
-  .social {
-    font-size: 4vh;
   }
 }
 
@@ -97,29 +122,10 @@
   .container {
     margin-top: 27vh;
   }
-
-  .text1 {
-    font-size: 8vh;
-  }
-  .text2 {
-    font-size: 4vh;
-  }
-  .social {
-    font-size: 4vh;
-  }
 }
 
 @media only screen and (min-width: 1200px) {
   .container {
     margin-top: 21vh;
-  }
-  .text1 {
-    font-size: 10vh;
-  }
-  .text2 {
-    font-size: 5vh;
-  }
-  .social {
-    font-size: 4vh;
   }
 }
