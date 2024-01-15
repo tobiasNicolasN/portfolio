@@ -1,0 +1,36 @@
+.languageButton {
+    background-color: transparent;
+    padding: 10px 20px;
+    width: 200px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+  }
+  
+  .languageButton:hover {
+    transition: 0.8s;
+    cursor: pointer;
+    background-color: #1eff05;
+    color: #000000;
+    border: 1px solid #1eff05;
+  }
+
+  .aboutContainer{
+    margin-left: 5vw;
+    font-weight: 500;
+    margin-bottom: 2vh;
+  }
+
+  .about{
+    color: white;
+    text-align: left;
+    font-size: 1.5rem;
+  }
+
+  .colorText{
+    color: #1eff05;
+    font-style: italic;
+  }

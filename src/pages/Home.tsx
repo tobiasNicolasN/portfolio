@@ -2,8 +2,19 @@ import { useNavigate } from "react-router-dom";
 import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
 import style from "../styles/Home.module.css";
 
-function Home1() {
+interface IHomePage {
+  language: string;
+  changeLanguage: (newLanguage: string) => void;
+}
+
+function Home({ language, changeLanguage }: IHomePage) {
   const navigate = useNavigate();
+
+  const portfolioLang = (lang: string) => {
+    language !== lang
+      ? (changeLanguage(lang), navigate("/portfolio"))
+      : navigate("/portfolio");
+  };
 
   return (
     <>
@@ -11,10 +22,16 @@ function Home1() {
         <h1 className={style.text1}>Tobias Nicolas Nuñez</h1>
         <h2 className={style.text2}>FullStack Developer</h2>
         <div className={style.langButtons}>
-          <button className={style.langButton} onClick={() => navigate("/es")}>
+          <button
+            className={style.langButton}
+            onClick={() => portfolioLang("es")}
+          >
             Ver mi trabajo
           </button>
-          <button className={style.langButton} onClick={() => navigate("/en")}>
+          <button
+            className={style.langButton}
+            onClick={() => portfolioLang("en")}
+          >
             Check my work
           </button>
         </div>
@@ -41,4 +58,4 @@ function Home1() {
   );
 }
 
-export default Home1;
+export default Home;
